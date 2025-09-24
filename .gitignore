@@ -1,0 +1,17 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE specific
+*.vscode/
+*.vsidx
