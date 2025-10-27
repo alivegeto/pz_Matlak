@@ -1,14 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>alivegeto.TaskPlanner.Domain.Logic_</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>alivegeto.TaskPlanner.Domain.Logic_</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<NuGetAuditMode>all</NuGetAuditMode>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\alivegeto.TaskPlanner.Domain.Models\alivegeto.TaskPlanner.Domain.Models\alivegeto.TaskPlanner.Domain.Models..csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+	  <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.3" />
+	  <PackageReference Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\alivegeto.TaskPlanner.Domain.Models\alivegeto.TaskPlanner.Domain.Models\alivegeto.TaskPlanner.Domain.Models..csproj" />
+	  <ProjectReference Include="..\..\alivegeto.TaskPlanner\alivegeto.TaskPlanner.DataAccess.Abstractions\alivegeto.TaskPlanner.DataAccess.Abstractions.csproj" />
+	</ItemGroup>
+
+	
 
 </Project>
